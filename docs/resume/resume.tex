@@ -1,0 +1,253 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Dominick}{Twitty}{ \urlstyle{same}
+\href{dktwitty@gmail.com}{dktwitty@gmail.com} | 860.449.3465
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Cornell University}
+\descript{BS in Computer Science}
+\location{College of Engineering}
+\location{Expected May 2015 | Ithaca, NY \\ Cum. GPA: 3.55}
+\sectionsep
+
+\subsection{Robert Fitch High}
+\location{Grad. June 2011 | Groton, CT}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+
+\subsection{Graduate}
+Cloud Computing \\
+Compilers + Practicum \\
+Reasoning about Knowledge (current)\\
+\sectionsep
+
+\subsection{Undergraduate}
+Algorithms {\footnotesize \textit{\textbf{(+ Teaching Asst)}}}\\
+Machine Learning \\
+Operating Systems \\
+Functional Programming \\
+Programming Languages \\
+Computer Vision \\
+Natural Language Processing \\
+Mathematical Modelling \\
+Abstract Algebra\\
+Number Theory
+Data Structures\\
+Systems Programming\\
+Networks\\
+Numerical Analysis (current)\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+Github:// \href{https://github.com/dtwitty}{\custombold{dtwitty}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Google}
+\descript{| Software Engineering Intern }
+\location{June 2014 – Aug 2014 | San Bruno, CA}
+\location{Languages: C++ | Python}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Built system to detect and skip non-music sections of music videos
+\item Created application to allow others to help train the system
+\item Designed back-end systems for productionization and validation
+\item All work reviewed and expected to enter production
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Sentrana}
+\descript{| Software Engineering Intern}
+\location{June 2013 – Aug 2013 | Washington, DC}
+\location{Languages: Node.js | C\#}
+\begin{tightemize}
+\item Deisgned and executed viability tests for different sharded databases
+\item Built an inference tool in Node.js to guess optimal data vizualization
+\item Designed a domain-specific Grammar-of-Graphics implementation
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Taggpic}
+\descript{| Software Engineering Intern}
+\location{May 2012 – Dec 2012 | Ithaca, NY}
+\location{Languages: Python}
+\begin{tightemize}
+\item Helped port a large computer vision tool to a cloud-based architecture
+\item Designed queue system between front- and back-end servers
+\item Worked on public API
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2014 & Winner & Cornell Mathematical Contest in Modelling\\
+2014 & Honourable Mention & Int. Mathematical Contest in Modelling\\
+2013 & Winner & CS 3410 Cache Racing\\
+2011 & Recipient & John McMullen Dean's Scholarship\\
+2011 & & FIRST Team 2168 Programming Lead
+\end{tabular}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+\subsection{Programming}
+\vspace{-\topsep}
+\begin{minipage}[t]{0.32\textwidth}
+\location{Experienced:}
+\begin{tightemize}
+\item Python
+\item C++
+\item Java
+\end{tightemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\textwidth}
+\location{Proficient:}
+\begin{tightemize}
+\item C
+\item Javascript
+\item OCaml
+\item Matlab
+\end{tightemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\textwidth}
+\location{Familiar:}
+\begin{tightemize}
+\item C\#
+\item Shell
+\item HTML
+\item MySQL
+\end{tightemize}
+\end{minipage}
+\sectionsep
+
+\vspace{-1em}
+\subsection{Other}
+\begin{minipage}[t]{0.45\textwidth}
+\begin{tightemize}
+\item Git
+\item Perforce
+\item Test-Driven-Development
+\end{tightemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+\begin{tightemize}
+\item Web Development
+\item Technical Writing
+\end{tightemize}
+\end{minipage}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
